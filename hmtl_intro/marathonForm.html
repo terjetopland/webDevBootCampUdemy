@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Marathon registration page!</h1>
+    </header>
+    <section id="marathon-registration">
+        <form action="/registration.html">
+            <h2>Race Registration!</h2>
+            <div class="name">
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name" required>
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name" required>
+            </div>
+            <div class="marathon-distance">
+                <p>Select a Race:</p>
+                <p>
+                    <label for="marathon-distance-short">
+                        <input type="radio" name="marathon-distance" id="marathon-distance-short" value="marathon-distance-short" required checked>
+                        Fun Run 5k
+                    </label>
+                </p>
+                <p>
+                    <label for="marathon-distance-half">
+                        <input type="radio" name="marathon-distance" id="marathon-distance-half" value="marathon-distance-half">
+                        Half Marathon
+                    </label>
+                </p>
+                <p>
+                    <label for="marathon-distance-full">
+                        <input type="radio" name="marathon-distance" id="marathon-distance-full" value="marathon-distance-full">
+                        Full Marathon
+                    </label>
+                </p>
+            </div>
+            <div class="marathon-email-password">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div class="marathon-age-group">
+                <label for="marathon-age-group">Select Age Group</label>
+                <select name="marathon-age-group" id="marathon-age-group">
+                    <option value="under-18">under 18</option>
+                    <option value="18-and-above">18 and above</option>
+                </select>
+            </div>
+            <button type="submit">Register!</button>
+        </form>
+    </section>
+
+
+</body>
+
+</html>

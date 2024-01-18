@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Some kind of forms</h1>
+    <section id="form_test_one">
+        <form action="/blarg">
+            <div>
+                <label for="color_picker">Color picker:</label>
+                <input id="color_picker" name="color_picker" type="color">
+            </div>
+            <div>
+                <label for="date_picker">Date picker:</label>
+                <input id="date_picker" name="date_picker" type="date">
+            </div>
+            <button type="submit">Submit</button>
+
+        </form>
+    </section>
+    <hr>
+    <section id="goolge_search_form">
+        <form action="https://www.google.com/search">
+            <input type="text" name="q" placeholder="Search on google">
+            <button type="submit">Search google</button>
+        </form>
+    </section>
+    <hr>
+    <section id="select_test_one">
+        <form action="/blarg">
+            <div>
+                <label for="car">Select a car: </label>
+                <select name="car" id="car" required>
+                    <option value="volvo">Volvo</option>
+                    <option value="bmw">BMW</option>
+                    <option value="skoda">Skoda</option>
+                    <option value="fiat">Fiat</option>
+                </select>
+            </div>
+            <div>
+                <label for="txt_area_describe_car"></label>
+                <textarea name="describe_car" id="txt_area_describe_car" cols="30" rows="10" minlength="10" maxlength="1000" placeholder="Describe your car" required></textarea>
+            </div>
+            <button type="submit">Submit your car</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
