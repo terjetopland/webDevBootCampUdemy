@@ -1,0 +1,13 @@
+h1  {
+    color: rgba(200, 120, 40);
+}
+
+button {
+    color: rgba(100, 120, 40);
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 2px green;
+}
+
+p {
+    color: rgba(200, 120, 40);
+}
