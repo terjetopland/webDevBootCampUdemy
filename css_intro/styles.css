@@ -32,3 +32,8 @@ p {
 .para-lorem {
     font-weight: bold;
 }
+
+/* descendant selector: It means the child is selected 'parent' 'child' {some styling } */
+div div {
+    color: rgb(245, 245, 245);
+}
