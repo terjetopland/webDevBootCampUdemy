@@ -51,9 +51,19 @@ p+p {
     color: rgba(50, 120, 40)
 }
 
+/* diplay */
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
 /* direct decendant selector */
 footer>p {
     text-transform: uppercase;
+    padding: 70px 0;
+    width: 30%;
+    text-align: center;
 }
 
 footer>p>span {
@@ -71,3 +81,31 @@ p:nth-of-type(2n) {
     color: rgb(200, 245, 150);
 }
 
+/* borders */
+p.light-border{
+    color: rgba(200, 120, 40);
+    border: 5px solid rgb(245, 245, 245);
+    border-radius: 10px 30px 10px 30px;
+    background-color: rgb(245, 245, 245);
+}
+
+
+#parents-and-children {
+    color: rgb(245, 245, 245);
+    padding: 5px;
+    width: 300px;
+    margin: 30px;
+    border: 2px dotted rgb(245, 245, 245);
+}
+
+#grand-grand-parent, #grand-parent, #parent, #child {
+    width: 90%;
+    padding: 3px;
+    border: 2px double rgb(245, 245, 245);
+}
+
+#parents-and-children > span {
+    padding: 10px;
+    display: block;
+    color: rgb(200, 245, 150);
+}

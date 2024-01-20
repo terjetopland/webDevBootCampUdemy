@@ -41,8 +41,25 @@
             <input type="password" name="password" id="password" placeholder="Enter password">
         </form>
     </section>
+    <section id="parents-and-children">
+        <h2>Parents and children:</h2>
+        <div id="grand-grand-parent">
+            I am grand grand parent
+            <div id="grand-parent">
+                I am grand parent
+                <div id="parent">
+                    I am parent
+                    <div id="child">I am child</div>
+                </div>
+            </div>
+        </div>
+        <span>Each of us has 90&percnt; width. This means that we have 90&percnt; of our parents width.</span>
+    </section>
     <footer>
-        <p>Here a direct descendant selector was used in css: <span>footer &gt; p</span>
+        <p class="light-border">Here a direct descendant selector was used in css: <span>footer &gt; p</span>
+        </p>
+        <p class="light-border">I'm in a <span>display: flex; </span>and <span>justify-content: space-around;</span>
+            container of my parent
         </p>
     </footer>
 
