@@ -13,19 +13,27 @@ h1 {
 }
 
 button {
-    color: rgba(100, 120, 40);
-    background-color: rgb(245, 245, 245);
+    background-color: rgba(200, 120, 40);
+    color: rgb(10, 10, 30);
     box-shadow: 0.5rem 0.2rem 0.5rem green;
+
 }
+
 
 p {
     color: rgba(200, 120, 40);
 }
 
 /* id selector */
-#i-am-button {
+/* #i-am-button {
     background-color: rgba(200, 120, 40);
     color: rgb(10, 10, 30);
+    
+} */
+
+button:hover {
+    color: rgba(100, 120, 40);
+    background-color: rgb(245, 245, 245);
 }
 
 /* class selector*/
@@ -33,7 +41,33 @@ p {
     font-weight: bold;
 }
 
-/* descendant selector: It means the child is selected 'parent' 'child' {some styling } */
+/* descendant selector: It means all childs is selected 'parent' 'children' {some styling on children } */
 div div {
     color: rgb(245, 245, 245);
 }
+
+/* adjacent combinator: An element right after another adjacent element is selected */
+p+p {
+    color: rgba(50, 120, 40)
+}
+
+/* direct decendant selector */
+footer>p {
+    text-transform: uppercase;
+}
+
+footer>p>span {
+    text-transform: lowercase;
+}
+
+/* attribute selector */
+input[type='password'] {
+    background-color: rgb(200, 245, 150);
+}
+
+/* nth of */
+/* Here every second p element is chosen*/
+p:nth-of-type(2n) {
+    color: rgb(200, 245, 150);
+}
+
