@@ -1,15 +1,35 @@
 body {
     background-color: rgb(10, 10, 30);
     color: rgba(200, 120, 40);
+    padding: 80px;
+    padding-top: 100px;
 }
+
+
 
 h1 {
     color: rgba(200, 120, 40);
     text-align: center;
-    text-decoration: rgba(100, 120, 40) overline underline;
     letter-spacing: 1.5rem;
     font-weight: lighter;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Arial;
+}
+
+
+
+#main-header {
+    background-color: rgb(10, 10, 30);
+    box-sizing: border-box;
+    margin: 0;
+    position: fixed;
+    top: 0;
+}
+
+#rounded-border-box {
+    border: 4px solid rgb(100, 120, 40);
+    border-left: 4px solid rgb(10, 10, 30);
+    border-right: 4px solid rgb(10, 10, 30);
+    border-radius: 50%; 
 }
 
 button {
@@ -82,7 +102,7 @@ p:nth-of-type(2n) {
 }
 
 /* borders */
-p.light-border{
+p.light-border {
     color: rgba(200, 120, 40);
     border: 5px solid rgb(245, 245, 245);
     border-radius: 10px 30px 10px 30px;
@@ -98,13 +118,16 @@ p.light-border{
     border: 2px dotted rgb(245, 245, 245);
 }
 
-#grand-grand-parent, #grand-parent, #parent, #child {
+#grand-grand-parent,
+#grand-parent,
+#parent,
+#child {
     width: 90%;
     padding: 3px;
     border: 2px double rgb(245, 245, 245);
 }
 
-#parents-and-children > span {
+#parents-and-children>span {
     padding: 10px;
     display: block;
     color: rgb(200, 245, 150);
