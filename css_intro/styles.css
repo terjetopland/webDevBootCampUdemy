@@ -3,6 +3,7 @@ body {
     color: rgba(200, 120, 40);
     padding: 80px;
     padding-top: 100px;
+    text-align: center;
 }
 
 
@@ -29,7 +30,7 @@ h1 {
     border: 4px solid rgb(100, 120, 40);
     border-left: 4px solid rgb(10, 10, 30);
     border-right: 4px solid rgb(10, 10, 30);
-    border-radius: 50%; 
+    border-radius: 50%;
 }
 
 button {
@@ -131,4 +132,58 @@ p.light-border {
     padding: 10px;
     display: block;
     color: rgb(200, 245, 150);
+}
+
+#transition {
+    margin: 20px 0 20px 0;
+    color: rgb(245, 245, 245);
+}
+
+#transition h2 {
+    margin: 10px;
+}
+
+#transition-elements {
+    display: flex;
+    margin-top: 10px;
+}
+
+#transition-elements:hover div {
+    margin-top: 40px;
+}
+#transition-circle-one,
+#transition-circle-two, #transition-circle-three, #transition-circle-four {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(245, 245, 245);
+    /* center the element */
+    margin: 0 auto;
+}
+
+#transition-elements:hover #transition-circle-one {
+    background-color: rgb(100, 120, 40);
+    border-radius: 50%;
+    transition: 2s ease-in;
+}
+
+#transition-elements:hover #transition-circle-two {
+    background-color: rgb(200, 120, 40);
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    transition: 3s;
+    
+}
+
+#transition-elements:hover #transition-circle-three {
+    background-color: rgb(200, 120, 40);
+    border-radius: 50%;
+    transform: rotate(90deg);
+    transition: 3s cubic-bezier(0.80, 1.01, 1, -0.68);
+    
+}
+
+#transition-elements:hover #transition-circle-four {
+    background-color: rgb(100, 120, 40);
+    border-radius: 50%;
+    transition: 2s ease-in;
 }
