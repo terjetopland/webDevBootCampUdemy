@@ -1,8 +1,8 @@
 body {
     background-color: rgb(10, 10, 30);
     color: rgba(200, 120, 40);
-    padding: 80px;
-    padding-top: 100px;
+    padding: 1rem;
+    padding-top: 7rem;
     text-align: center;
 }
 
@@ -16,6 +16,23 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Arial;
 }
 
+nav ul.no-bullets {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+li a, footer span a{
+    color: rgb(200, 120, 40);
+    text-decoration: none;
+    list-style-type: none;
+    transition: 0.25s;
+}
+
+.no-bullets li a:hover , footer span a:hover{
+    color: rgba(100, 120, 40);
+    box-shadow: 0 0.2rem 0.5rem green;
+    transform: translateY(-0.1rem);
+}
 
 
 #main-header {
@@ -36,7 +53,7 @@ h1 {
 button {
     background-color: rgba(200, 120, 40);
     color: rgb(10, 10, 30);
-    box-shadow: 0.5rem 0.2rem 0.5rem green;
+    transition: 0.25s;
 
 }
 
@@ -55,6 +72,8 @@ p {
 button:hover {
     color: rgba(100, 120, 40);
     background-color: rgb(245, 245, 245);
+    box-shadow: 0 0.2rem 0.5rem green;
+    transform: translateY(-0.1rem);
 }
 
 /* class selector*/
@@ -72,11 +91,14 @@ p+p {
     color: rgba(50, 120, 40)
 }
 
-/* diplay */
+
 footer {
+    margin-top: 20px;
+}
+/* diplay */
+.space-around-footer {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
 }
 
 /* direct decendant selector */
@@ -145,10 +167,11 @@ p.light-border {
     transition: 3s ease-in-out;
 }
 
-section:hover h2 {
+section:hover + #transition h2 {
     margin-top: 20px;
     transform: skewY(10deg);
     transition:  transform 3s ease-in-out;
+    cursor: pointer;
 }
 
 #transition-elements {
@@ -160,6 +183,8 @@ section:hover h2 {
 #transition-elements:hover {
     align-items: center;
     transition: 3s;
+    cursor: pointer;
+    
 }
 
 #transition-elements:hover div {
@@ -170,8 +195,8 @@ section:hover h2 {
 #transition-circle-two,
 #transition-circle-three,
 #transition-circle-four {
-    width: 50px;
-    height: 50px;
+    width: 5rem;
+    height: 5rem;
     background-color: rgb(245, 245, 245);
     /* center the element */
     margin: 0 auto;
@@ -205,4 +230,21 @@ section:hover h2 {
     background-color: rgb(100, 120, 40);
     border-radius: 50%;
     transition: 2s ease-in;
+}
+
+#transition-circle-one:hover {
+    transform: translateX(30rem);
+}
+
+#transition-circle-four:hover + section{
+    transform: translateY(-15rem);
+}
+
+.google-font {
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+}
+
+span.google-font {
+    font-weight: 300;
 }
