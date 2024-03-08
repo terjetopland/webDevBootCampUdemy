@@ -121,3 +121,23 @@ nav.navbar {
   margin: 0 5px;
   height: 18px;
 }
+
+.modal-outer {
+  width: 50%;
+  height: 50%;
+  min-width: 286px;
+  min-height: 500px;
+  margin: 20px auto;
+}
+
+.modal-inner {
+  width:94%;
+  height: 95%;
+  min-width: 260px;
+  min-height: 450px;
+  background-color: whitesmoke;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 10px 5px;
+  margin: 0 auto;
+}
