@@ -125,19 +125,27 @@ nav.navbar {
 .modal-outer {
   width: 50%;
   height: 50%;
-  min-width: 286px;
+  min-width: 308px;
   min-height: 500px;
   margin: 20px auto;
 }
 
 .modal-inner {
-  width:94%;
+  width: 90%;
   height: 95%;
-  min-width: 260px;
-  min-height: 450px;
+  min-width: 90%;
+  min-height: 90%;
   background-color: whitesmoke;
   border: 1px solid grey;
   border-radius: 10px;
   padding: 10px 5px;
   margin: 0 auto;
+}
+
+.modal-form {
+  padding: 30px 10px 0 10px;
+}
+
+.form-input {
+  width: 45%;  
 }
