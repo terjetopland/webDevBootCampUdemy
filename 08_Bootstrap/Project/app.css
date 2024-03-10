@@ -3,7 +3,7 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-top: 3rem;
+  /* padding-top: 3rem; */
   padding-bottom: 3rem;
   color: #5a5a5a;
   font-family: 'Open Sans';
@@ -126,7 +126,8 @@ nav.navbar {
   width: 50%;
   height: 50%;
   min-width: 308px;
-  min-height: 500px;
+  /* max-width: 430px; */
+  /* min-height: 500px; */
   margin: 20px auto;
 }
 
@@ -165,4 +166,14 @@ nav.navbar {
 
 .form-floating>label {
   padding: 0.5rem 0.75rem;
+}
+
+h1, h2 {
+  text-align: center;
+  
+}
+h1 {
+  padding: 0;
+  margin: 0;
+  background-color: #0d6efd;
 }

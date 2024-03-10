@@ -5,12 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modal Form</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../Project/app.css">
 </head>
+
 <body>
+    <h1>Skimerke</h1>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary sticky-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="expandme">
+            <div class="navbar-nav">
+                <a href="Home" class="nav-item nav-link">Home</a>
+                <a href="Home" class="nav-item nav-link">About</a>
+                <a href="Home" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
     <section class="container">
-        <h1>Make it a modal form</h1>
+        <h2>Make it a modal form</h2>
         <div class="modal-outer">
             <div class="row  d-flex justify-content-end">
                 <button class="btn-close" aria-label="c"></button>
@@ -18,44 +35,51 @@
             <div class="row ">
                 <div class="modal-inner">
                     <div class="text-center">
-                        
+
                         <div class="btn-group col-6" role="group" aria-label="login register radio toggle button group">
-                            <input type="radio" class="btn-check" name="btnradio" id="tgl-log-in" autocomplete="off" checked>
-                            <label class="btn btn-outline-primary col" for="tgl-log-in">Log in</label>
-                          
+                            <input type="radio" class="btn-check" name="btnradio" id="tgl-log-in" autocomplete="off"
+                                checked>
+                            <label class="btn btn-outline-primary col-3 col-sm-4" for="tgl-log-in">Log in</label>
+
                             <input type="radio" class="btn-check" name="btnradio" id="tgl-register" autocomplete="off">
-                            <label class="btn btn-outline-primary col" for="tgl-register">Register</label>
-                    
-                          </div>
+                            <label class="btn btn-outline-primary col-3 col-sm-4" for="tgl-register">Register</label>
+
+                        </div>
                     </div>
                     <div class="modal-form">
                         <div class="d-flex flex-row mb-3 justify-content-center">
                             <div class="form-floating me-2 form-input">
-                                <input class="form-control" type="text" id="first-name" placeholder="First name" aria-label="enter first-name"></input>
+                                <input class="form-control col col-md-6" type="text" id="first-name"
+                                    placeholder="First name" aria-label="enter first-name"></input>
                                 <label for="first-name" class="form-label">First name</label>
                             </div>
                             <div class="form-floating form-input">
-                                <input class="form-control" type="text" id="last-na" placeholder="Last name" aria-label="enter last-name"></input>
+                                <input class="form-control" type="text" id="last-na" placeholder="Last name"
+                                    aria-label="enter last-name"></input>
                                 <label for="last-name" class="form-label">Last Name</label>
                             </div>
                         </div>
                         <div class="d-flex flex-row mb-3 justify-content-center">
                             <div class="form-floating me-2 form-input">
-                                <input class="form-control" type="email" id="email" placeholder="email" aria-label="enter email"></input>
+                                <input class="form-control" type="email" id="email" placeholder="email"
+                                    aria-label="enter email"></input>
                                 <label for="email" class="form-label">Email</label>
                             </div>
                             <div class="form-floating form-input">
-                                <input class="form-control" type="date" id="date-of-birth" placeholder="Date of birth" aria-label="enter date-of-birth"></input>
+                                <input class="form-control" type="date" id="date-of-birth" placeholder="Date of birth"
+                                    aria-label="enter date-of-birth"></input>
                                 <label for="date-of-birth" class="form-label">Date of birth</label>
                             </div>
                         </div>
                         <div class="d-flex flex-row mb-5 justify-content-center">
                             <div class="form-floating me-2 form-input">
-                                <input class="form-control" type="password" id="password" placeholder="password" aria-label="enter password"></input>
+                                <input class="form-control" type="password" id="password" placeholder="password"
+                                    aria-label="enter password"></input>
                                 <label for="password" class="form-label">Password</label>
                             </div>
                             <div class="form-floating form-input">
-                                <input class="form-control" type="password" id="re-password" placeholder="Reenter password" aria-label="Reenter password"></input>
+                                <input class="form-control" type="password" id="re-password"
+                                    placeholder="Reenter password" aria-label="Reenter password"></input>
                                 <label for="password" class="form-label">Confirm pass</label>
                             </div>
                         </div>
@@ -63,25 +87,88 @@
                     <div class="text-center">
                         <button class="btn btn-primary col-6">Fortsett</button>
                     </div>
-                        
-                        
-                    
-                    
+
+
+
+
                 </div>
             </div>
-            
-            
+
+
 
         </div>
 
 
     </section>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, reiciendis officiis, eaque voluptatum eius facilis omnis deleniti cumque, exercitationem veniam tempore. Aspernatur voluptates magni adipisci cum delectus vel culpa excepturi.
+    Distinctio facilis numquam deleniti voluptates corporis, quis veniam mollitia. Accusamus dolor quasi ipsum deleniti dolorem voluptatem! Minus eveniet sequi totam, tempora eaque itaque facere? Consequatur reprehenderit quidem voluptas perspiciatis quis?
+    Ea necessitatibus quod sint optio eius itaque facere omnis totam quaerat! Facilis aliquid laboriosam hic pariatur architecto ad, beatae voluptatum adipisci voluptatem cum officia molestiae veritatis. Beatae iste eos adipisci.
+    Omnis fuga doloribus quas, alias dolore vitae ducimus quisquam hic laborum fugiat ab ipsum soluta tempora architecto reiciendis consequatur expedita perferendis dicta, accusantium eligendi, aperiam beatae! Hic officia repudiandae praesentium.
+    Ab vero incidunt, quo et assumenda quia corrupti eligendi odio est nemo quasi consequatur alias in id exercitationem, molestiae, ad dolore error placeat fugit itaque perspiciatis suscipit harum. Quas, magni.
+    Aliquam expedita aut omnis atque consequuntur reprehenderit voluptates. Doloremque cupiditate nulla quasi rem ullam eveniet quam. Natus cum ducimus facilis eaque, et, consequatur incidunt nisi cumque repellat, obcaecati esse deserunt!
+    Cumque necessitatibus eius, omnis alias eum repellat deleniti eligendi maxime, culpa quidem minus, amet aut iure! Dolorum quas dicta error, sit earum ea itaque ducimus totam, commodi accusamus quos dolor!
+    Quam asperiores saepe, deleniti voluptate reiciendis quasi ratione, velit magnam, maxime eos distinctio culpa inventore id ipsam expedita provident debitis obcaecati explicabo aperiam. Dolores expedita nihil modi, hic ab ratione.
+    Voluptatibus, earum. Consequatur nisi sint, fuga omnis pariatur asperiores! Qui, sunt eaque consequuntur illum enim expedita suscipit optio ullam eius consectetur nulla voluptate omnis ea nemo quae similique explicabo porro.
+    Qui reiciendis voluptate itaque ex voluptatem quia consequuntur repellat dolore tenetur quaerat tempore necessitatibus culpa blanditiis aliquam mollitia dignissimos eligendi id cumque, aut quae? Laborum quod consequatur pariatur rem ad?
+    Commodi, autem. Laboriosam vero ex, minima, impedit non commodi beatae quasi soluta nostrum excepturi accusamus, sed voluptate aperiam ipsum eos odio autem totam. Tenetur est, vero odio quibusdam pariatur doloribus.
+    Inventore quidem, dolorem qui voluptatibus cumque ipsa in. Exercitationem sed, similique fugit labore beatae, repellat vero ipsam commodi harum adipisci vitae consequuntur magni alias dolore expedita, id sit! Rem, accusamus!
+    Sit consequatur, iste sapiente voluptatum doloribus eaque id laborum! Fugit nulla culpa repellendus architecto rem alias, corrupti odit repellat dolorum ipsam itaque sunt repudiandae fugiat dolorem provident voluptas. Ut, cupiditate.
+    Totam dicta earum rerum magnam nihil laborum cupiditate eius? Magnam earum nostrum suscipit laudantium. Magni blanditiis est quo exercitationem id dolor nesciunt omnis corrupti consequatur. Numquam quod laudantium dignissimos ipsa!
+    Temporibus totam quidem laboriosam sit quis tenetur pariatur voluptatibus cumque praesentium! Dolorem reprehenderit eligendi nemo, perspiciatis tempora quisquam amet tenetur libero rem architecto, dicta voluptatum, dolorum facere vero mollitia qui.
+    Consectetur illo quia omnis saepe, modi nam corrupti provident perferendis tenetur in fugit neque maiores expedita voluptate odit? Hic similique aperiam ullam optio rem, nostrum voluptate mollitia ex itaque molestiae!
+    Eaque animi error porro nobis ea dignissimos, nihil corporis consectetur suscipit explicabo eos laborum laudantium voluptas fuga tempore eveniet consequuntur saepe! Ullam magni aspernatur labore distinctio. Tempora iusto commodi est.
+    Vel voluptas suscipit aliquam necessitatibus, nihil voluptatibus asperiores quasi, laborum voluptate et, odio nesciunt architecto eaque magnam. Ipsam quod maiores laborum inventore cum beatae consectetur id! Culpa aliquid aut soluta!
+    Ex laborum eveniet iste quos magni quibusdam odio fugit. Nemo rem obcaecati officia, quas recusandae perspiciatis quod reprehenderit iste esse quisquam error neque. Rem perferendis optio necessitatibus cum vitae unde?
+    Magnam quos ex deleniti eos quas quidem ullam tenetur laborum quaerat accusamus vel, in ipsam, delectus architecto amet repudiandae quod cumque labore ad eaque veritatis? Totam cupiditate officia explicabo dignissimos!
+    Ipsam accusamus iure ut expedita obcaecati. Quasi placeat, ut aspernatur officiis cupiditate, dolor illo nobis quibusdam itaque sed nihil veniam blanditiis, quod vitae illum modi doloribus provident dolorum consequuntur distinctio.
+    At alias, sint ut animi quasi aliquid, vitae dignissimos repellat, doloribus numquam ipsum. Ut illo, ex minus ipsam veritatis obcaecati provident omnis molestias eos vel in fuga pariatur necessitatibus esse!
+    Accusantium magni labore, molestiae voluptas consequatur corrupti facere aut unde omnis hic odio blanditiis non commodi. Facilis, obcaecati quaerat enim expedita ullam quisquam eum ipsum! Qui tempora quaerat velit tempore.
+    Dolores, voluptates veritatis in laudantium et aut ab neque voluptatibus, tenetur suscipit sunt voluptatem repellat ipsa. Vel aut dicta distinctio corrupti laboriosam ducimus nesciunt. Sequi vitae unde incidunt suscipit quisquam?
+    Sapiente veniam ea laudantium velit aspernatur sunt dignissimos, ratione amet earum facilis est laborum. Aut, veritatis? Ipsam ullam placeat doloremque praesentium similique vel exercitationem! Maxime amet dicta dolor repudiandae et.
+    Dignissimos numquam magnam ratione delectus nostrum consectetur omnis cumque ea perspiciatis ipsa minima, recusandae veritatis eveniet amet voluptatem tempore blanditiis ducimus laboriosam. Odit, atque animi cum obcaecati accusantium mollitia ea!
+    Sit quidem asperiores maiores maxime consequatur mollitia, eum error, earum cupiditate autem veniam, ex ipsum ut aliquam impedit velit animi inventore necessitatibus provident! Ipsum quod autem, exercitationem facilis porro fugiat?
+    Quos animi dolorem, vero, qui fugiat eligendi ad vitae omnis perferendis facilis maiores expedita reiciendis neque odit sequi voluptatem adipisci quas nobis, laboriosam officiis earum consequuntur odio? Animi, cupiditate doloremque?
+    Doloribus officia perferendis laborum ducimus exercitationem nulla saepe nobis, expedita libero quae harum quibusdam enim! Unde officiis minima deserunt delectus nostrum? Voluptas quasi enim libero esse sequi tempore dignissimos hic.
+    Voluptas rem ratione ea natus! Aliquam ad magnam aspernatur exercitationem molestias dolorem earum laborum porro expedita eius, illum repudiandae tempore, suscipit cumque doloribus quisquam animi consectetur deserunt non placeat aperiam?
+    Ipsum aperiam, cumque sapiente in culpa atque consequatur repudiandae modi totam pariatur corporis sed praesentium dolor ut recusandae quae possimus perferendis, mollitia ad error necessitatibus aut repellat omnis! Hic, cumque?
+    Nisi at doloremque dolor nostrum ratione assumenda error laudantium delectus excepturi ipsum natus ad maiores quam incidunt, iure quasi harum repudiandae similique iusto esse voluptate saepe earum vitae doloribus. Dolor?
+    Earum, facilis officia repellat qui debitis corrupti, quas similique deserunt, ex quos reprehenderit. Nostrum temporibus voluptatum officiis ad voluptates tempora quisquam, repellendus id cupiditate odit ducimus ab similique, alias voluptatem!
+    Maiores, sint! Alias ullam ipsum possimus sit perferendis itaque, vitae modi minima. Tenetur quo, quasi deserunt dolorum molestias nemo corporis modi magni, cumque veritatis, sunt alias asperiores voluptas numquam hic.
+    Perferendis, culpa quaerat qui ut corporis reiciendis eum vel saepe optio fugiat sed nesciunt autem non suscipit deleniti voluptate deserunt obcaecati minima iusto repellendus assumenda reprehenderit, necessitatibus quos commodi. Magni.
+    Quasi earum maxime, omnis sapiente dolore animi, praesentium cumque dolores porro, hic voluptatum laboriosam consectetur dolorem deleniti a? Iusto sint excepturi voluptates facere iste enim atque veritatis consequatur. Ipsum, dicta?
+    Error sequi numquam deleniti cumque quos fuga maxime rem in ipsam, repudiandae, amet maiores autem similique ipsa ab blanditiis quo reiciendis tenetur facilis exercitationem. Commodi corporis neque ipsam quos enim.
+    Debitis mollitia expedita dolor quo porro quaerat corrupti suscipit nesciunt velit. Quidem tempore corporis neque libero repellat quisquam nesciunt est ab blanditiis exercitationem fugiat ipsa voluptatibus quis, pariatur assumenda sunt!
+    Voluptates ipsa impedit a provident ipsum aperiam? Laboriosam provident quisquam nisi consequuntur qui iure eos explicabo ut, molestiae ducimus culpa numquam obcaecati maxime vel impedit rem nulla nihil voluptates fugit.
+    Vel saepe iste atque debitis provident fugiat, nesciunt consectetur? Soluta omnis sequi id deleniti corrupti repudiandae amet est adipisci, expedita, praesentium possimus mollitia assumenda necessitatibus minima nam ad quisquam ex!
+    Fugit, voluptates nostrum sit corporis suscipit ex esse iure, aliquam explicabo unde error consectetur iste recusandae non ratione quasi laborum earum mollitia officia sed accusantium. Quia sapiente at ipsa quisquam.
+    Perferendis reprehenderit ipsum optio fugit doloribus earum incidunt repudiandae dolore impedit! Reiciendis perferendis eveniet architecto, neque natus ullam voluptatem beatae corrupti optio reprehenderit voluptas debitis tempore facilis iste, sunt expedita?
+    Dicta rerum, accusantium minus deleniti laborum tempore modi mollitia, amet voluptatem ad veniam dignissimos nostrum accusamus, temporibus vero. Facere consectetur voluptates iusto dolor in fugiat explicabo eveniet aut sequi cupiditate!
+    Ea ad quia fuga expedita! Minus numquam alias, voluptatem id officiis dolor iste voluptate minima repellendus ad ut maxime placeat! Error, illum nobis pariatur nihil ullam quisquam sapiente doloribus in?
+    Assumenda quia, sed aspernatur facilis at quidem omnis accusantium minima mollitia? Tempora rerum qui esse explicabo obcaecati in repellat quis atque sit, quisquam quos non dolores voluptate minus nam iure?
+    Corrupti nostrum earum nesciunt ullam deleniti vitae fuga autem pariatur enim voluptatibus voluptas dicta voluptatum harum molestiae ipsum nihil odio animi amet officiis illum laudantium, exercitationem neque illo numquam. Minus?
+    Ipsa, quidem nihil reiciendis odit alias ex perspiciatis aliquam nobis quae sunt quam doloribus reprehenderit tempora rerum explicabo vel. Velit animi inventore dolore omnis ut placeat, illo possimus dignissimos quae?
+    Et maiores, maxime ipsa doloremque distinctio suscipit sit dolorum dignissimos neque saepe, corporis aperiam harum libero repellendus fugiat adipisci quidem rem esse illo possimus! Reprehenderit deserunt quo cumque quasi molestias.
+    Soluta inventore sint quam ex at corrupti hic veniam voluptatum exercitationem temporibus labore ullam aliquam quos quae pariatur, dolor aut mollitia numquam accusamus minima tenetur! Cum non debitis hic eum.
+    Adipisci dolore iure sint dolores at, laborum totam repudiandae explicabo veniam earum corrupti sunt aut, architecto nam non facilis. Eius aliquam corrupti at dolorem reprehenderit fuga porro repellendus iure earum!</div>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
