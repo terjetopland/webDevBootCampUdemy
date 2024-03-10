@@ -147,5 +147,22 @@ nav.navbar {
 }
 
 .form-input {
-  width: 45%;  
+  width: 45%;
+}
+
+/* Thanks isherwood. Got from https://stackoverflow.com/questions/72391908/how-can-i-decrease-input-height-with-floating-labels*/
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext {
+  padding: 0rem 0.75rem;
+}
+
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext,
+.form-floating>.form-select {
+  height: calc(2.5rem + 2px);
+  line-height: 1;
+}
+
+.form-floating>label {
+  padding: 0.5rem 0.75rem;
 }
