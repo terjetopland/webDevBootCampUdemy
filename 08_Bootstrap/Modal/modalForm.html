@@ -12,35 +12,32 @@
 </head>
 
 <body>
-    <h1>Skimerke</h1>
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary sticky-top">
         <!-- <a class="navbar-brand" href="#">Skimerke</a> -->
         <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="expandme">
-            <div class="navbar-nav m-auto">
+            <div class="navbar-nav">
                 <a href="#" class="nav-item nav-link">Home</a>
                 <a href="#" class="nav-item nav-link">About</a>
                 <a href="#" class="nav-item nav-link">Contact</a>
             </div>
         </div>
+        <div class="ms-auto">
+            <button id="log-in-register-btn" class="btn btn-outline-light shadow-sm">Log in / Register</button>
+        </div>
     </nav>
 
-    <section class="container">
-        <h2>Make it a modal form</h2>
-        <h3>Today it is <span id="day-of-week">No day</span></h3>
-
+    <div id="my-modal" class="modal-container">
         <div class="modal-outer">
             <div class="row  d-flex justify-content-end">
-                <button class="btn-close" aria-label="c"></button>
+                <button id="my-modal-close-btn" class="btn-close" aria-label="c"></button>
             </div>
             <div id="carousel-login-register" class="carousel slide" data-interval="false" data-pause="hover">
-
                 <div class="row ">
                     <div class="modal-inner">
                         <div class="text-center">
-
                             <div class="btn-group col-6 shadow" role="group"
                                 aria-label="login register radio toggle button group">
                                 <input type="radio" class="btn-check carousel-control-prev"
@@ -116,18 +113,20 @@
                                     <button class="btn btn-primary col-6 shadow">Fortsett</button>
                                 </div>
                             </div>
-
-
-
-
-
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
+    </div>
+
+    <section class="container">
+        <h2>Make it a modal form</h2>
+        <h3>Today it is <span id="day-of-week">No day</span></h3>
+        <h4 class="text-success" id="user-input-word"></h4>
+
+
+
 
 
     </section>
